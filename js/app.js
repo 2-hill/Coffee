@@ -48,12 +48,14 @@ let randomize = function() {
 // set interval function
 let intervalID;
 let everySecond = function() {
-  return intervalID = setInterval(randomize, 1000);
+  intervalID = setInterval(randomize, 1000)
+  document.getElementById('start').disabled = true;
 };
 
 // stop interval function
 let stopEverySecond = function() {
-  return clearInterval(intervalID)
+  clearInterval(intervalID)
+  document.getElementById('start').disabled = false;
 };
 
 // sort function
