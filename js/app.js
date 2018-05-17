@@ -63,8 +63,8 @@ let stopEverySecond = function() {
 };
 
 // sort functions
-let descending = function () {
 let descArray = [...TABLE_DATA.sort( (a, b) => a.price > b.price ? -1 : 1)];
+let descending = function () {
 
     for (let i = 0; i < descArray.length; i++) {
       let oldPrice = document.getElementById('priceColumn');
@@ -90,8 +90,8 @@ let descArray = [...TABLE_DATA.sort( (a, b) => a.price > b.price ? -1 : 1)];
 //document.getElementById('sortDesc').disabled = true;
 };
 
-let ascending = function () {
 let ascArray = [...TABLE_DATA.sort((a, b) => a.price > b.price ? 1 : -1 )];
+let ascending = function () {
     for (let i = 0; i < ascArray.length; i++) {
       let oldPrice = document.getElementById('priceColumn');
       let newPrice = document.createElement('td');
