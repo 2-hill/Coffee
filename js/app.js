@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use strict";
 // fetching json data
 fetch("./json/data.js")
